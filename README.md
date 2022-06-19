@@ -17,6 +17,8 @@
 - copy .env-template and spcify your tokens
 - rename .env-template to .env
 - map different channels to your whishes in ./data/cron/watchedChannels.json config file
+- specify cron run schedule in app.js
+> node app.js
 
 ## Workflow
 - cron job runs youtubeChannel.exectue() every 15 minutes
