@@ -1,0 +1,142 @@
+{
+    "links": {
+        "UCZ-oWkpMnHjTJpeOOlD80OA": "https://www.youtube.com/c/Vandiril",
+        "UCHSI8erNrN6hs3sUK6oONLA": "https://www.youtube.com/c/ilmango",
+        "UCEcdWgwI36-uObOjmW6JGow": "https://www.youtube.com/c/nivarias",
+        "UCm3_j4RLEzgMovQTRPx47MQ": "https://www.youtube.com/c/DrachenLord",
+        "UCtt2JqBTG-KoBae4F0Ay2tg": "https://www.youtube.com/c/SeaofThieves"
+    },
+    "videos": {
+        "UCZ-oWkpMnHjTJpeOOlD80OA": [
+            "e8bDb5U09gU",
+            "rZ8DXs1yDPE",
+            "uaY9m0vec_g",
+            "MnwD3Y7tL0E",
+            "l1WEXk7R65A",
+            "IKpHQrAEtmI",
+            "GcKxciaZBy8",
+            "PAoL8pevXEs",
+            "UJiXrPFGEDQ",
+            "-G4ggBmGYiE",
+            "mZKqjnndH2A",
+            "mfoowkUwOxY",
+            "oJ8aSzmTPfg",
+            "FyQjrySQ-9Y",
+            "uK7xqqxYo5Y"
+        ],
+        "UCHSI8erNrN6hs3sUK6oONLA": [
+            "uT9yIic049k",
+            "cP-vWpJS4lo",
+            "-lD7mFf-lzg",
+            "8ty3HE3Vg8U",
+            "zUv44uDN40Q",
+            "kkpss1gUz7w",
+            "yzwRwlwWlz0",
+            "nmG_bYdqp6Q",
+            "lVCE3qTVBSQ",
+            "JrnEeHhW3as",
+            "T5-vtC_w38Q",
+            "LKx8heVPhlM",
+            "um238ebnXOQ",
+            "juydwDVB17g"
+        ],
+        "UCEcdWgwI36-uObOjmW6JGow": [
+            "yv7H0jlWKQE",
+            "wcQBhZKMKXY",
+            "yK9Pvb6RbMo",
+            "yXbXpG5Dz58",
+            "-foyTLpxqQc",
+            "lzfjSXiDrl0",
+            "TsKClwqDbO0",
+            "rQqUiEheBVQ",
+            "B9qUywbrGSY",
+            "BSA5Cm1DQgg",
+            "xtGUdnQ8I2Y",
+            "RYyx7XJDmVA",
+            "TY2v2DV0TZU",
+            "VvBVhm4tvrw",
+            "iz2KBZJbAAY"
+        ],
+        "UCm3_j4RLEzgMovQTRPx47MQ": [
+            "HqAmVDzaJxk",
+            "NC47mDKd8RQ",
+            "6dFANygC7Lo",
+            "V-JPse2N5_M",
+            "kdVKJ1ut9DE",
+            "dfwON-z5hAM",
+            "cTtbTCgiCoU",
+            "czDu1ULJiMs",
+            "vY5ni4xAnJg",
+            "lVS7UXZjer4",
+            "IkAsFdOk9pQ",
+            "CSeMoJK0G4A",
+            "K1SXIizhvGg",
+            "2nnAscaFhno",
+            "MjgE5-FTpWc"
+        ],
+        "UCtt2JqBTG-KoBae4F0Ay2tg": [
+            "UJd72ykl-Ac",
+            "jGUCd_EFlIw",
+            "7fawoxhxXug",
+            "l2mY7D_ot8Q",
+            "Z-WqqIBglIM",
+            "_Y4SZ9NVOCo",
+            "WmXRpH2TATY",
+            "AjD39bjav7M",
+            "Q6J-IZc447s",
+            "MYmvLtUy4bQ",
+            "ZXWr9LJciQo",
+            "M-qgBZ-mg54",
+            "-kN11W2XceQ",
+            "xE9xqjdccRM",
+            "Ue1kJ1PzBjw"
+        ]
+    },
+    "discordWebhooks": {
+        "die_boys": "DC_WH_KEY_OSKAR",
+        "server_von_oskar": "DC_WH_KEY_OSKAR2"
+    },
+    "telegramChatId": {
+        "oskar": "T_CID_OSKAR",
+        "mikey": "T_CID_MIKEY"
+    },
+    "app_keys": {
+        "UCZ-oWkpMnHjTJpeOOlD80OA": {
+            "telegram": [
+                "mikey"
+            ],
+            "discordWebhook": [
+                "server_von_oskar"
+            ]
+        },
+        "UCHSI8erNrN6hs3sUK6oONLA": {
+            "telegram": [
+                "oskar"
+            ],
+            "discordWebhook": [
+                "server_von_oskar",
+                "die_boys"
+            ]
+        },
+        "UCEcdWgwI36-uObOjmW6JGow": {
+            "telegram": [
+                "oskar"
+            ],
+            "discordWebhook": [
+                "server_von_oskar",
+                "die_boys"
+            ]
+        },
+        "UCm3_j4RLEzgMovQTRPx47MQ": {
+            "telegram": [],
+            "discordWebhook": [
+                "server_von_oskar",
+                "die_boys"
+            ]
+        },
+        "UCtt2JqBTG-KoBae4F0Ay2tg": {
+            "telegram": [],
+            "discordWebhook": []
+        }
+    }
+}

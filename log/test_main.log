@@ -1,0 +1,154 @@
+[18.6.2022, 20:46:22] | ---------------Startup at 18.6.2022, 20:46:22---------------
+[18.6.2022, 20:46:23] | ctrl + c
+[18.6.2022, 20:46:27] | ctrl + c
+[18.6.2022, 20:47:32] | ---------------Startup at 18.6.2022, 20:47:32---------------
+[18.6.2022, 20:47:33] | ctrl + c
+[18.6.2022, 20:52:57] | ---------------Startup at 18.6.2022, 20:52:57---------------
+[18.6.2022, 20:53:17] | ---------------Startup at 18.6.2022, 20:53:17---------------
+[18.6.2022, 20:58:59] | ---------------Startup at 18.6.2022, 20:58:59---------------
+[18.6.2022, 20:59:44] | ---------------Startup at 18.6.2022, 20:59:44---------------
+[18.6.2022, 20:59:57] | ---------------Startup at 18.6.2022, 20:59:57---------------
+[18.6.2022, 21:00:30] | ---------------Startup at 18.6.2022, 21:00:30---------------
+[18.6.2022, 21:00:31] | lol
+[18.6.2022, 21:06:21] | ---------------Startup at 18.6.2022, 21:06:21---------------
+[18.6.2022, 21:06:21] | die_boys is listening to ilmango, nivarias, DrachenLord
+[18.6.2022, 21:06:21] | server_von_oskar is listening to Vandiril, ilmango, nivarias, DrachenLord
+[18.6.2022, 21:06:21] | oskar is listening to 
+[18.6.2022, 21:06:21] | mikey is listening to 
+[18.6.2022, 21:06:21] | [TELEGRAM]: /sendMessage api call success
+[18.6.2022, 21:06:21] | [TELEGRAM]: /sendMessage api call success
+[18.6.2022, 21:06:57] | ---------------Startup at 18.6.2022, 21:06:57---------------
+[18.6.2022, 21:06:57] | die_boys is listening to ilmango, nivarias, DrachenLord
+[18.6.2022, 21:06:57] | server_von_oskar is listening to Vandiril, ilmango, nivarias, DrachenLord
+[18.6.2022, 21:06:57] | oskar is listening to ilmango, nivarias
+[18.6.2022, 21:06:57] | mikey is listening to Vandiril
+[18.6.2022, 21:06:57] | [TELEGRAM]: /sendMessage api call success
+[18.6.2022, 21:06:57] | [TELEGRAM]: /sendMessage api call success
+[18.6.2022, 21:12:50] | ---------------Startup at 18.6.2022, 21:12:50---------------
+[18.6.2022, 21:12:50] | die_boys is listening to ilmango, nivarias, DrachenLord
+[18.6.2022, 21:12:50] | server_von_oskar is listening to Vandiril, ilmango, nivarias, DrachenLord
+[18.6.2022, 21:12:50] | oskar is listening to ilmango, nivarias
+[18.6.2022, 21:12:50] | mikey is listening to Vandiril
+[18.6.2022, 21:12:50] | [TELEGRAM]: /sendMessage api call success
+[18.6.2022, 21:12:50] | [TELEGRAM]: /sendMessage api call success
+[18.6.2022, 21:12:50] | [DISCORD]: webhook call success
+[18.6.2022, 21:12:50] | [DISCORD]: webhook call success
+[18.6.2022, 21:16:25] | ---------------Startup at 18.6.2022, 21:16:25---------------
+[18.6.2022, 21:16:26] | [YT_CHANNEL]: HTML scrap success
+[18.6.2022, 21:25:05] | ---------------Startup at 18.6.2022, 21:25:05---------------
+[18.6.2022, 21:25:05] | [YT_CHANNEL]: getChannelId() HTML scrap success
+[18.6.2022, 21:25:15] | ---------------Startup at 18.6.2022, 21:25:15---------------
+[18.6.2022, 21:25:15] | [YT_CHANNEL]: Channel already scraped
+[18.6.2022, 21:30:03] | ---------------Startup at 18.6.2022, 21:30:03---------------
+[18.6.2022, 21:30:15] | [object Object]
+[18.6.2022, 21:30:30] | [object Object]
+[18.6.2022, 21:30:45] | [object Object]
+[19.6.2022, 15:52:16] | ---------------Startup at 19.6.2022, 15:52:16---------------
+[19.6.2022, 15:52:17] | [TELEGRAM]: Error AxiosError: Request failed with status code 400
+[19.6.2022, 15:54:45] | ---------------Startup at 19.6.2022, 15:54:45---------------
+[19.6.2022, 15:54:45] | oskar
+[19.6.2022, 15:54:45] | [TELEGRAM]: Error AxiosError: Request failed with status code 400
+[19.6.2022, 15:55:17] | ---------------Startup at 19.6.2022, 15:55:17---------------
+[19.6.2022, 15:55:17] | [TELEGRAM]: /sendMessage api call success
+[19.6.2022, 15:56:02] | ---------------Startup at 19.6.2022, 15:56:02---------------
+[19.6.2022, 15:56:02] | [YT_CHANNEL]: execute started
+[19.6.2022, 15:56:02] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:56:02] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:56:02] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:56:02] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:57:04] | ---------------Startup at 19.6.2022, 15:57:04---------------
+[19.6.2022, 15:57:04] | [YT_CHANNEL]: execute started
+[19.6.2022, 15:57:04] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:57:04] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:57:04] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:57:04] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:57:04] | Channel wasnt scrapped ones so no dev data available
+[19.6.2022, 15:57:04] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:57:04] | Channel wasnt scrapped ones so no dev data available
+[19.6.2022, 15:57:04] | [YT_CHANNEL]: execute finished
+[19.6.2022, 15:57:45] | ---------------Startup at 19.6.2022, 15:57:45---------------
+[19.6.2022, 15:57:45] | [YT_CHANNEL]: execute started
+[19.6.2022, 15:57:45] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:57:45] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:57:45] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:57:45] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:57:45] | Channel wasnt scrapped ones so no dev data available
+[19.6.2022, 15:57:45] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:57:45] | Channel wasnt scrapped ones so no dev data available
+[19.6.2022, 15:57:45] | [YT_CHANNEL]: execute finished
+[19.6.2022, 15:58:01] | ---------------Startup at 19.6.2022, 15:58:01---------------
+[19.6.2022, 15:58:01] | [YT_CHANNEL]: execute started
+[19.6.2022, 15:58:01] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:58:01] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:58:01] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:58:01] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:58:01] | Channel wasnt scrapped ones so no dev data available
+[19.6.2022, 15:58:01] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:58:01] | Channel wasnt scrapped ones so no dev data available
+[19.6.2022, 15:58:01] | [YT_CHANNEL]: execute finished
+[19.6.2022, 15:58:01] | [TELEGRAM]: Error AxiosError: Request failed with status code 400
+[19.6.2022, 15:58:01] | [DISCORD]: Error AxiosError: Request failed with status code 405
+[19.6.2022, 15:58:01] | [DISCORD]: Error AxiosError: Request failed with status code 405
+[19.6.2022, 15:58:34] | ---------------Startup at 19.6.2022, 15:58:34---------------
+[19.6.2022, 15:58:34] | [YT_CHANNEL]: execute started
+[19.6.2022, 15:58:34] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:58:34] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:58:34] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:58:34] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:58:34] | Channel wasnt scrapped ones so no dev data available
+[19.6.2022, 15:58:34] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:58:34] | Channel wasnt scrapped ones so no dev data available
+[19.6.2022, 15:58:34] | [YT_CHANNEL]: execute finished
+[19.6.2022, 15:58:40] | ---------------Startup at 19.6.2022, 15:58:40---------------
+[19.6.2022, 15:58:40] | [YT_CHANNEL]: execute started
+[19.6.2022, 15:58:40] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:58:40] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:58:40] | T_CID_OSKAR
+[19.6.2022, 15:58:40] | DC_WH_KEY_OSKAR2
+[19.6.2022, 15:58:40] | DC_WH_KEY_OSKAR
+[19.6.2022, 15:58:40] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:58:40] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:58:40] | Channel wasnt scrapped ones so no dev data available
+[19.6.2022, 15:58:40] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:58:40] | Channel wasnt scrapped ones so no dev data available
+[19.6.2022, 15:58:40] | [YT_CHANNEL]: execute finished
+[19.6.2022, 15:58:40] | [TELEGRAM]: Error AxiosError: Request failed with status code 400
+[19.6.2022, 15:58:40] | [DISCORD]: Error AxiosError: Request failed with status code 405
+[19.6.2022, 15:58:40] | [DISCORD]: Error AxiosError: Request failed with status code 405
+[19.6.2022, 15:59:43] | ---------------Startup at 19.6.2022, 15:59:43---------------
+[19.6.2022, 15:59:43] | [YT_CHANNEL]: execute started
+[19.6.2022, 15:59:43] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:59:43] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:59:43] | T_CID_OSKAR
+[19.6.2022, 15:59:43] | DC_WH_KEY_OSKAR2
+[19.6.2022, 15:59:43] | DC_WH_KEY_OSKAR
+[19.6.2022, 15:59:43] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:59:43] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:59:43] | Channel wasnt scrapped ones so no dev data available
+[19.6.2022, 15:59:43] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[19.6.2022, 15:59:43] | Channel wasnt scrapped ones so no dev data available
+[19.6.2022, 15:59:43] | [YT_CHANNEL]: execute finished
+[19.6.2022, 15:59:43] | [TELEGRAM]: /sendMessage api call success
+[19.6.2022, 15:59:44] | [DISCORD]: webhook call success
+[19.6.2022, 15:59:44] | [DISCORD]: webhook call success
+[19.6.2022, 16:11:30] | ---------------Startup at 19.6.2022, 16:11:30---------------
+[19.6.2022, 16:11:30] | [YT_CHANNEL]: execute started
+[19.6.2022, 16:11:31] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCZ-oWkpMnHjTJpeOOlD80OA
+[19.6.2022, 16:11:33] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCHSI8erNrN6hs3sUK6oONLA
+[19.6.2022, 16:11:35] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCEcdWgwI36-uObOjmW6JGow
+[19.6.2022, 16:11:37] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCm3_j4RLEzgMovQTRPx47MQ
+[19.6.2022, 16:11:39] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCtt2JqBTG-KoBae4F0Ay2tg
+[19.6.2022, 16:11:41] | [YT_CHANNEL]: execute finished
+[19.6.2022, 16:13:10] | ---------------Startup at 19.6.2022, 16:13:10---------------
+[19.6.2022, 16:13:10] | [YT_CHANNEL]: execute started
+[19.6.2022, 16:13:10] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCZ-oWkpMnHjTJpeOOlD80OA
+[19.6.2022, 16:13:13] | e8bDb5U09gU,rZ8DXs1yDPE,uaY9m0vec_g,MnwD3Y7tL0E,l1WEXk7R65A,IKpHQrAEtmI,GcKxciaZBy8,PAoL8pevXEs,UJiXrPFGEDQ,-G4ggBmGYiE,mZKqjnndH2A,mfoowkUwOxY,oJ8aSzmTPfg,FyQjrySQ-9Y,uK7xqqxYo5Y
+[19.6.2022, 16:13:13] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCHSI8erNrN6hs3sUK6oONLA
+[19.6.2022, 16:13:15] | uT9yIic049k,cP-vWpJS4lo,-lD7mFf-lzg,8ty3HE3Vg8U,zUv44uDN40Q,kkpss1gUz7w,yzwRwlwWlz0,nmG_bYdqp6Q,lVCE3qTVBSQ,JrnEeHhW3as,T5-vtC_w38Q,LKx8heVPhlM,um238ebnXOQ,juydwDVB17g
+[19.6.2022, 16:13:15] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCEcdWgwI36-uObOjmW6JGow
+[19.6.2022, 16:13:17] | yv7H0jlWKQE,wcQBhZKMKXY,yK9Pvb6RbMo,yXbXpG5Dz58,-foyTLpxqQc,lzfjSXiDrl0,TsKClwqDbO0,rQqUiEheBVQ,B9qUywbrGSY,BSA5Cm1DQgg,xtGUdnQ8I2Y,RYyx7XJDmVA,TY2v2DV0TZU,VvBVhm4tvrw,iz2KBZJbAAY
+[19.6.2022, 16:13:17] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCm3_j4RLEzgMovQTRPx47MQ
+[19.6.2022, 16:13:19] | HqAmVDzaJxk,NC47mDKd8RQ,6dFANygC7Lo,V-JPse2N5_M,kdVKJ1ut9DE,dfwON-z5hAM,cTtbTCgiCoU,czDu1ULJiMs,vY5ni4xAnJg,lVS7UXZjer4,IkAsFdOk9pQ,CSeMoJK0G4A,K1SXIizhvGg,2nnAscaFhno,MjgE5-FTpWc
+[19.6.2022, 16:13:19] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCtt2JqBTG-KoBae4F0Ay2tg
+[19.6.2022, 16:13:21] | UJd72ykl-Ac,jGUCd_EFlIw,7fawoxhxXug,l2mY7D_ot8Q,Z-WqqIBglIM,_Y4SZ9NVOCo,WmXRpH2TATY,AjD39bjav7M,Q6J-IZc447s,MYmvLtUy4bQ,ZXWr9LJciQo,M-qgBZ-mg54,-kN11W2XceQ,xE9xqjdccRM,Ue1kJ1PzBjw
+[19.6.2022, 16:13:21] | [YT_CHANNEL]: execute finished

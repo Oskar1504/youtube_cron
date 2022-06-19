@@ -1,0 +1,19 @@
+{
+  "name": "youtube_cron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cron": "^2.0.0",
+    "dotenv": "^16.0.1",
+    "node-html-parser": "^5.3.3",
+    "xml-js": "^1.6.11"
+  }
+}

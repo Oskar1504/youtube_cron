@@ -1,0 +1,85 @@
+[16.6.2022, 17:00:00] | [YT_CHANNEL]: execute started
+[16.6.2022, 17:00:00] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCZ-oWkpMnHjTJpeOOlD80OA
+[16.6.2022, 17:00:02] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCHSI8erNrN6hs3sUK6oONLA
+[16.6.2022, 17:00:04] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCEcdWgwI36-uObOjmW6JGow
+[16.6.2022, 17:00:06] | [YT_CHANNEL]: execute finished
+[16.6.2022, 17:00:06] | [JOB SCHEDULE] youtubeChannelFeed: 2022-06-16T17:15:00.000+02:00
+[16.6.2022, 17:15:00] | [YT_CHANNEL]: execute started
+[16.6.2022, 17:15:00] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCZ-oWkpMnHjTJpeOOlD80OA
+[16.6.2022, 17:15:02] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCHSI8erNrN6hs3sUK6oONLA
+[16.6.2022, 17:15:04] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCEcdWgwI36-uObOjmW6JGow
+[16.6.2022, 17:15:06] | [YT_CHANNEL]: execute finished
+[16.6.2022, 17:15:06] | [JOB SCHEDULE] youtubeChannelFeed: 2022-06-16T17:30:00.000+02:00
+[16.6.2022, 17:30:00] | [YT_CHANNEL]: execute started
+[16.6.2022, 17:30:00] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCZ-oWkpMnHjTJpeOOlD80OA
+[16.6.2022, 17:30:02] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCHSI8erNrN6hs3sUK6oONLA
+[16.6.2022, 17:30:04] | [YT_CHANNEL]: RSS FEED  call success: channel_id UCEcdWgwI36-uObOjmW6JGow
+[16.6.2022, 17:30:06] | [YT_CHANNEL]: execute finished
+[16.6.2022, 17:30:06] | [JOB SCHEDULE] youtubeChannelFeed: 2022-06-16T17:45:00.000+02:00
+[YT_CHANNEL]: execute started
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[YT_CHANNEL]: execute finished
+[TELEGRAM]: /sendMessage api call success
+[DISCORD]: webhook call success
+[YT_CHANNEL]: execute started
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[YT_CHANNEL]: execute finished
+[YT_CHANNEL]: execute started
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[YT_CHANNEL]: execute finished
+[YT_CHANNEL]: execute started
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[YT_CHANNEL]: execute finished
+[YT_CHANNEL]: execute started
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[YT_CHANNEL]: execute finished
+[TELEGRAM]: /sendMessage api call success
+[DISCORD]: webhook call success
+[YT_CHANNEL]: execute started
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[YT_CHANNEL]: execute finished
+[YT_CHANNEL]: execute started
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[DEV MODE]: Wont scrap abo feed to prevent soft ban
+[YT_CHANNEL]: execute finished
+[TELEGRAM]: /sendMessage api call success
+[TELEGRAM]: /sendMessage api call success
+[DISCORD]: webhook call success
+[DISCORD]: webhook call success
+[17.6.2022, 11:23:56] | ---------------Startup at 17.6.2022, 11:23:56---------------
+[17.6.2022, 11:23:56] | [YT_CHANNEL]: execute started
+[17.6.2022, 11:23:56] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[17.6.2022, 11:23:56] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[17.6.2022, 11:23:56] | [DEV MODE]: Wont scrap abo feed to prevent soft ban
+[17.6.2022, 11:23:56] | [YT_CHANNEL]: execute finished
+[18.6.2022, 20:18:27] | ---------------Startup at 18.6.2022, 20:18:27---------------
+[18.6.2022, 20:18:28] | [YT_CHANNEL]: HTML scrap success
+[18.6.2022, 20:18:28] | UCm3_j4RLEzgMovQTRPx47MQ
+[18.6.2022, 20:18:28] | nach der funktion
+[18.6.2022, 20:37:10] | ---------------Startup at 18.6.2022, 20:37:10---------------
+[18.6.2022, 20:37:10] | die_boys is listening to ilmango
+[18.6.2022, 20:37:10] | server_von_oskar is listening to Vandiril, ilmango, nivarias, DrachenLord
+[18.6.2022, 20:40:49] | ---------------Startup at 18.6.2022, 20:40:49---------------
+[18.6.2022, 20:40:49] | die_boys is listening to nivarias
+[18.6.2022, 20:40:49] | server_von_oskar is listening to Vandiril, ilmango, nivarias, DrachenLord
+[18.6.2022, 20:40:49] | [DISCORD]: webhook call success
+[18.6.2022, 20:40:50] | [DISCORD]: webhook call success
+[18.6.2022, 20:41:22] | ---------------Startup at 18.6.2022, 20:41:22---------------
+[18.6.2022, 20:41:22] | die_boys is listening to ilmango, nivarias, DrachenLord
+[18.6.2022, 20:41:22] | server_von_oskar is listening to Vandiril, ilmango, nivarias, DrachenLord
+[18.6.2022, 20:41:22] | [DISCORD]: webhook call success
+[18.6.2022, 20:41:23] | [DISCORD]: webhook call success
+[18.6.2022, 20:44:46] | ---------------Startup at 18.6.2022, 20:44:46---------------
