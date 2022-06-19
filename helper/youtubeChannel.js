@@ -131,7 +131,7 @@ module.exports = {
                     "cookie": process.env.YOUTUBE_COOKIES
                 }
             })
-            .then(res => {
+            .then(async res => {
                 console.log("[YT_CHANNEL]: getChannelId() HTML scrap success")
                 let root = HTMLParser.parse(res.data);
                 let rssFeedLink = [...root.querySelectorAll("link[title='RSS']")][0].rawAttributes.href
@@ -140,8 +140,13 @@ module.exports = {
                 watchedChannels.links[channelId] = link
                 watchedChannels.videos[channelId] = []
                 watchedChannels.app_keys[channelId] = this.generateAppKeys()
-                fs.writeFileSync("./data/cron/watchedChannels.json",JSON.stringify(watchedChannels, null, 4))
                 o = channelId
+                
+                // add all videos until now to "already send list"
+                let videos = await this.getChannelFeed(channelId)
+                watchedChannels.videos[channelId] = videos.map(video => video.videoId)
+
+                fs.writeFileSync("./data/cron/watchedChannels.json",JSON.stringify(watchedChannels, null, 4))
             })
             .catch(e => {
                 console.log(`[YT_CHANNEL]: Error ${e.toString()}`)
@@ -217,5 +222,35 @@ module.exports = {
             
         }
         console.log("[YT_CHANNEL]: execute finished")
+    },
+    addListenerToChannel: function(channelName, application, key) {
+        let availableApplications = Object.keys(Object.values(watchedChannels.app_keys)[0])
+        if(!availableApplications.includes(application)){
+            throw `Application isnt available. Availables: ${availableApplications.join(", ")}`
+        }
+
+        
+        // i use Object.entries return [key, vlaue]
+        // .some breaks as son as first true returned => used to stop when channel found 
+        // wrapped in if to throw error when no channel found due to the fact always false returned
+        if(!Object.entries(watchedChannels.links).some(linkPair => {
+            if(linkPair[1].includes(channelName)){
+                let channel_id = linkPair[0]
+
+                if(!watchedChannels.app_keys[channel_id][application].includes(key)){
+                    watchedChannels.app_keys[channel_id][application].push(key)
+                    fs.writeFileSync("./data/cron/watchedChannels.json",JSON.stringify(watchedChannels, null, 4))
+                    console.log(`[YT_CHANNEL]: Success '${channelName}' is now listened at ${application}:${key}`)
+                }else{
+                    console.log(`[YT_CHANNEL]: Error '${channelName}' already listened by ${application}:${key}`)
+                }
+                return true
+            }else{
+                return false
+            }
+        })){
+            throw "Channel not available"
+        }
+
     }
 }

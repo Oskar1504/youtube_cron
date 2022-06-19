@@ -4,7 +4,8 @@
         "UCHSI8erNrN6hs3sUK6oONLA": "https://www.youtube.com/c/ilmango",
         "UCEcdWgwI36-uObOjmW6JGow": "https://www.youtube.com/c/nivarias",
         "UCm3_j4RLEzgMovQTRPx47MQ": "https://www.youtube.com/c/DrachenLord",
-        "UCtt2JqBTG-KoBae4F0Ay2tg": "https://www.youtube.com/c/SeaofThieves"
+        "UCtt2JqBTG-KoBae4F0Ay2tg": "https://www.youtube.com/c/SeaofThieves",
+        "UCsBjURrPoezykLs9EqgamOA": "https://www.youtube.com/c/Fireship"
     },
     "videos": {
         "UCZ-oWkpMnHjTJpeOOlD80OA": [
@@ -90,6 +91,23 @@
             "-kN11W2XceQ",
             "xE9xqjdccRM",
             "Ue1kJ1PzBjw"
+        ],
+        "UCsBjURrPoezykLs9EqgamOA": [
+            "erEgovG9WBs",
+            "HDZWWFSZUF0",
+            "NMWzgy8FsKs",
+            "o5Mwa_TJ3HM",
+            "BT2Cv-Tjq7Q",
+            "_k-F-MMvQV4",
+            "JYs_94znYy0",
+            "hw3Bx5vxKl0",
+            "g-_hVXzkn0o",
+            "-X8evddpu7M",
+            "-uleG_Vecis",
+            "74_7LrRe5DI",
+            "noq-ZHTD2Cg",
+            "HyWYpM_S-2c",
+            "_shA5Xwe8_4"
         ]
     },
     "discordWebhooks": {
@@ -136,6 +154,12 @@
         },
         "UCtt2JqBTG-KoBae4F0Ay2tg": {
             "telegram": [],
+            "discordWebhook": []
+        },
+        "UCsBjURrPoezykLs9EqgamOA": {
+            "telegram": [
+                "oskar"
+            ],
             "discordWebhook": []
         }
     }
