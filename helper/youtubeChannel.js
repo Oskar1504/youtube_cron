@@ -29,12 +29,13 @@ module.exports = {
             }
             let videoIdList = []
             
-            let schedule = process.env.SCHEDULE_MINUTES * 60 * 1000
-            let cronTimeStamp = new Date().getTime() - schedule
+            watchedChannels.lastTimeChecked = new Date().getTime()
+            fs.writeFileSync("./data/cron/watchedChannels.json",JSON.stringify(watchedChannels, null, 4))
+
     
             videos.forEach(video => {
                 let uploadTimestamp = new Date(video.publishedTime).getTime()
-                if(uploadTimestamp >= cronTimeStamp){
+                if(uploadTimestamp >= watchedChannels.lastTimeChecked){
                     watchedChannels.app_keys[channel_id].telegram.forEach(chat_name => {
                         telegramBot.sendNewVideoMessage(watchedChannels.telegramChatId[chat_name], video)
                     })
@@ -134,7 +135,6 @@ module.exports = {
                 let channelId = rssFeedLink.split("=")[1]
 
                 watchedChannels.links[channelId] = link
-                watchedChannels.videos[channelId] = []
                 watchedChannels.app_keys[channelId] = this.generateAppKeys()
                 o = channelId
                 

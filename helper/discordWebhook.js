@@ -26,16 +26,16 @@ module.exports = {
         //due to the fact sometimes some keys arent given i catch this error
         if(process.env[webhook_id]){  
             axios.post(`https://discord.com/api/webhooks/${process.env[webhook_id]}`, msg, {
-                    headers: {
-                    'Content-Type': 'application/json'
-                    }
-                })
-                .then(res => {
-                    console.log("[DISCORD]: webhook call success")
-                })
-                .catch(e => {
-                    console.log(`[DISCORD]: Error ${e.toString()}`)
-                })
+                headers: {
+                'Content-Type': 'application/json'
+                }
+            })
+            .then(res => {
+                console.log("[DISCORD]: webhook call success")
+            })
+            .catch(e => {
+                console.log(`[DISCORD]: Error ${e.toString()}`)
+            })
         }else{
             console.log(`[DISCORD]: ERROR webhook_id not defined in .env`)
         }
