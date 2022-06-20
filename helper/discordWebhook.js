@@ -14,19 +14,8 @@ module.exports = {
         let message = JSON.stringify({
             content: `**New Video by ${video.channel}**\n${title} \n\n https://youtube.com/watch?v=${video.videoId}`
         })
-
         
-       axios.post(`https://discord.com/api/webhooks/${process.env[webhook_id]}`, message, {
-            headers: {
-              'Content-Type': 'application/json'
-            }
-          })
-        .then(res => {
-            console.log("[DISCORD]: webhook call success")
-        })
-        .catch(e => {
-            console.log(`[DISCORD]: Error ${e.toString()}`)
-        })
+        this.sendMessage(webhook_id, message)
     },
     sendMessage(webhook_id, message){
         // possible cotent https://discord.com/developers/docs/resources/channel#create-message
@@ -34,17 +23,22 @@ module.exports = {
             content: message
         })
 
-        
-       axios.post(`https://discord.com/api/webhooks/${process.env[webhook_id]}`, msg, {
-            headers: {
-              'Content-Type': 'application/json'
-            }
-          })
-        .then(res => {
-            console.log("[DISCORD]: webhook call success")
-        })
-        .catch(e => {
-            console.log(`[DISCORD]: Error ${e.toString()}`)
-        })
+        //due to the fact sometimes some keys arent given i catch this error
+        if(process.env[webhook_id]){  
+            axios.post(`https://discord.com/api/webhooks/${process.env[webhook_id]}`, msg, {
+                    headers: {
+                    'Content-Type': 'application/json'
+                    }
+                })
+                .then(res => {
+                    console.log("[DISCORD]: webhook call success")
+                })
+                .catch(e => {
+                    console.log(`[DISCORD]: Error ${e.toString()}`)
+                })
+        }else{
+            console.log(`[DISCORD]: ERROR webhook_id not defined in .env`)
+        }
     }
+        
 };

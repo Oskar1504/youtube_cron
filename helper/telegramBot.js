@@ -12,31 +12,24 @@ module.exports = {
 
         let message = `New Video by ${video.channel}\n${video.title} \n\n https://youtube.com/watch?v=${video.videoId}`
         
-        axios.get(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
-            params: {
-            chat_id: process.env[chat_id],
-            text: message,
-            },
-        })
-        .then(res => {
-            console.log("[TELEGRAM]: /sendMessage api call success")
-        })
-        .catch(e => {
-            console.log(`[TELEGRAM]: Error ${e.toString()}`)
-        })
+        this.sendMessage(chat_id, message)
     },
     sendMessage(chat_id, message){
-        axios.get(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
-            params: {
-            chat_id: process.env[chat_id],
-            text: message,
-            },
-        })
-        .then(res => {
-            console.log("[TELEGRAM]: /sendMessage api call success")
-        })
-        .catch(e => {
-            console.log(`[TELEGRAM]: Error ${e.toString()}`)
-        })
+        if(process.env[chat_id]){
+            axios.get(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                params: {
+                chat_id: process.env[chat_id],
+                text: message,
+                },
+            })
+            .then(res => {
+                console.log("[TELEGRAM]: /sendMessage api call success")
+            })
+            .catch(e => {
+                console.log(`[TELEGRAM]: ERROR ${e.toString()}`)
+            })
+        }else{
+            console.log(`[TELEGRAM]: ERROR chat_id not defined in .env`)
+        }
     }
 };
