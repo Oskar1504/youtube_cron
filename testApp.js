@@ -11,8 +11,19 @@ var simulateRunningScript = new CronJob(
 	'*/5 * * * * *',
 	// '0 0/15 * 1/1 * *',
 	async function() {
-        envtest.keys.push("hallo")
-        fs.writeFileSync("./data/cron/envtest.json",JSON.stringify(envtest, null, 4))
+        let test = JSON.parse(fs.readFileSync(`./data/youtube/channels/UCEcdWgwI36-uObOjmW6JGow.json`))
+            
+        let schedule = process.env.SCHEDULE_MINUTES * 60 * 1000
+        let cronTimeStamp = new Date().getTime() - schedule
+
+        test.forEach(video => {
+            let uploadTimestamp = new Date(video.publishedTime).getTime()
+
+            if(uploadTimestamp >= cronTimeStamp){
+                console.log(`Hey new video ${video.videoId}`)
+            }
+        })
+        console.log("Cron runned")
     },
 	null,
 	false,
@@ -35,14 +46,18 @@ console.log = function(){
 console.log(`---------------Startup at ${new Date().toLocaleString()}---------------`)
 
 async function main(){
-    console.log(await aboChannel.getChannelId("https://www.youtube.com/c/SeaofThieves"))
-    console.log("nach der funktion")
+    // console.log(await aboChannel.getChannelId("https://www.youtube.com/c/SeaofThieves"))
+    // console.log("nach der funktion")
+
+    
 }
 
 // main()
-aboChannel.updateVideoList()
+// aboChannel.updateVideoList()
 //aboChannel.whoListensToWho()
 
 //aboChannel.getChannelId("https://www.youtube.com/c/SeaofThieves")
 
 //telegramBot.sendMessage("T_CID_OSKAR","Hallo oskar")
+
+aboChannel.execute()

@@ -28,11 +28,13 @@ module.exports = {
                 await new Promise(resolve => setTimeout(resolve, 2000));
             }
             let videoIdList = []
+            
+            let schedule = process.env.SCHEDULE_MINUTES * 60 * 1000
+            let cronTimeStamp = new Date().getTime() - schedule
+    
             videos.forEach(video => {
-                videoIdList.push(video.videoId)
-                if(!watchedChannels.videos[channel_id].includes(video.videoId)){
-                    watchedChannels.videos[channel_id].push(video.videoId)
-                    
+                let uploadTimestamp = new Date(video.publishedTime).getTime()
+                if(uploadTimestamp >= cronTimeStamp){
                     watchedChannels.app_keys[channel_id].telegram.forEach(chat_name => {
                         telegramBot.sendNewVideoMessage(watchedChannels.telegramChatId[chat_name], video)
                     })
@@ -42,12 +44,6 @@ module.exports = {
                     })
                 }
             })
-
-            //feed video ids are the only ids i need in the watchedChannel list
-            // older ids get deleted from list
-            // function inspired from https://stackoverflow.com/a/20690490 
-            watchedChannels.videos[channel_id] = watchedChannels.videos[channel_id].filter(item => videoIdList.includes(item))
-            fs.writeFileSync("./data/cron/watchedChannels.json",JSON.stringify(watchedChannels, null, 4))
 
             
         }
