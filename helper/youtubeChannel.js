@@ -28,10 +28,6 @@ module.exports = {
                 await new Promise(resolve => setTimeout(resolve, 2000));
             }
             let videoIdList = []
-            
-            watchedChannels.lastTimeChecked = new Date().getTime()
-            fs.writeFileSync("./data/cron/watchedChannels.json",JSON.stringify(watchedChannels, null, 4))
-
     
             videos.forEach(video => {
                 let uploadTimestamp = new Date(video.publishedTime).getTime()
@@ -45,9 +41,13 @@ module.exports = {
                     })
                 }
             })
-
             
         }
+        
+            
+        watchedChannels.lastTimeChecked = new Date().getTime()
+        fs.writeFileSync("./data/cron/watchedChannels.json",JSON.stringify(watchedChannels, null, 4))
+
         console.log("[YT_CHANNEL]: execute finished")
     },
     getChannelFeed: async function(channel_id) {
@@ -137,10 +137,6 @@ module.exports = {
                 watchedChannels.links[channelId] = link
                 watchedChannels.app_keys[channelId] = this.generateAppKeys()
                 o = channelId
-                
-                // add all videos until now to "already send list"
-                let videos = await this.getChannelFeed(channelId)
-                watchedChannels.videos[channelId] = videos.map(video => video.videoId)
 
                 fs.writeFileSync("./data/cron/watchedChannels.json",JSON.stringify(watchedChannels, null, 4))
             })

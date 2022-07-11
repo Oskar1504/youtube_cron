@@ -1,2 +1,5 @@
 .env
 node_modules
+youtube/channels/*.json
+youtube/*
+log/*.json

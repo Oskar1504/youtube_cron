@@ -56,8 +56,10 @@ async function main(){
 // aboChannel.updateVideoList()
 //aboChannel.whoListensToWho()
 
-//aboChannel.getChannelId("https://www.youtube.com/c/SeaofThieves")
+aboChannel.getChannelId("https://www.youtube.com/c/KatherineOfSkyGaming")
 
 //telegramBot.sendMessage("T_CID_OSKAR","Hallo oskar")
 
-aboChannel.execute()
+// aboChannel.execute()
+
+// aboChannel.getChannelFeed("UCEcdWgwI36-uObOjmW6JGow")

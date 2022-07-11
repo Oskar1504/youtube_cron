@@ -4,6 +4,7 @@ const fs = require('fs');
 
 const aboFeed = require("./helper/youtubeFeed")
 const channelFeed = require("./helper/youtubeChannel")
+const watchedChannels = require("./data/cron/watchedChannels.json");
 
 // extend console.log to write in log file
 //https://javascript.plainenglish.io/lets-extend-console-log-8641bda035c3
@@ -37,8 +38,12 @@ function afterExecute(e){
 
 console.log(`---------------Startup at ${new Date().toLocaleString()}---------------`)
 
-if(process.env.DEV_MODE != "DEV"){
-    channelFeed.whoListensToWho()
-}
+
+// watchedChannels.lastTimeChecked = new Date().getTime()
+// fs.writeFileSync("./data/cron/watchedChannels.json",JSON.stringify(watchedChannels, null, 4))
+
+// if(process.env.DEV_MODE != "DEV"){
+//     channelFeed.whoListensToWho()
+// }
 
 console.log(`[JOB SCHEDULE] youtubeChannelFeed: ${youtubeChannelFeed.nextDate().toString()}`)

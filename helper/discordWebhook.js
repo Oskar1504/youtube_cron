@@ -11,9 +11,7 @@ module.exports = {
         let title = video.title.replace(/\|\|/g,"|")
 
         // possible cotent https://discord.com/developers/docs/resources/channel#create-message
-        let message = JSON.stringify({
-            content: `**New Video by ${video.channel}**\n${title} \n\n https://youtube.com/watch?v=${video.videoId}`
-        })
+        let message = `**New Video by ${video.channel}**\n${title} \n\n https://youtube.com/watch?v=${video.videoId}`
         
         this.sendMessage(webhook_id, message)
     },
@@ -31,7 +29,7 @@ module.exports = {
                 }
             })
             .then(res => {
-                console.log("[DISCORD]: webhook call success")
+                console.log(`[DISCORD]: webhook call success ${webhook_id}`)
             })
             .catch(e => {
                 console.log(`[DISCORD]: Error ${e.toString()}`)

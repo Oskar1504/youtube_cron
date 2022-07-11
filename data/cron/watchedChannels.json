@@ -1,5 +1,5 @@
 {
-    "lastTimeChecked": 1655723493708,
+    "lastTimeChecked": 1657554314449,
     "links": {
         "UCZ-oWkpMnHjTJpeOOlD80OA": "https://www.youtube.com/c/Vandiril",
         "UCHSI8erNrN6hs3sUK6oONLA": "https://www.youtube.com/c/ilmango",
@@ -9,8 +9,7 @@
         "UCsBjURrPoezykLs9EqgamOA": "https://www.youtube.com/c/Fireship"
     },
     "discordWebhooks": {
-        "die_boys": "DC_WH_KEY_OSKAR",
-        "server_von_oskar": "DC_WH_KEY_OSKAR2"
+        "die_boys": "DC_WH_KEY_OSKAR"
     },
     "telegramChatId": {
         "oskar": "T_CID_OSKAR",
@@ -22,7 +21,7 @@
                 "mikey"
             ],
             "discordWebhook": [
-                "server_von_oskar"
+                "die_boys"
             ]
         },
         "UCHSI8erNrN6hs3sUK6oONLA": {
@@ -30,7 +29,6 @@
                 "oskar"
             ],
             "discordWebhook": [
-                "server_von_oskar",
                 "die_boys"
             ]
         },
@@ -39,26 +37,30 @@
                 "oskar"
             ],
             "discordWebhook": [
-                "server_von_oskar",
                 "die_boys"
             ]
         },
         "UCm3_j4RLEzgMovQTRPx47MQ": {
             "telegram": [],
             "discordWebhook": [
-                "server_von_oskar",
                 "die_boys"
             ]
         },
         "UCtt2JqBTG-KoBae4F0Ay2tg": {
-            "telegram": [],
-            "discordWebhook": []
+            "telegram": [
+                "oskar"
+            ],
+            "discordWebhook": [
+                "die_boys"
+            ]
         },
         "UCsBjURrPoezykLs9EqgamOA": {
             "telegram": [
                 "oskar"
             ],
-            "discordWebhook": []
+            "discordWebhook": [
+                "die_boys"
+            ]
         }
     }
 }

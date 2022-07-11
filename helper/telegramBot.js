@@ -23,7 +23,7 @@ module.exports = {
                 },
             })
             .then(res => {
-                console.log("[TELEGRAM]: /sendMessage api call success")
+                console.log(`[TELEGRAM]: /sendMessage api call success  ${chat_id}`)
             })
             .catch(e => {
                 console.log(`[TELEGRAM]: ERROR ${e.toString()}`)
