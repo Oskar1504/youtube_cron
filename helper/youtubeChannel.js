@@ -11,36 +11,47 @@ const discordWebhook = require('./discordWebhook');
 
 module.exports = {
     execute: async function (){
-        console.log("[YT_CHANNEL]: execute started")
+        console.group("[YT_CHANNEL]: execute started")
         for(channel_id of Object.keys(watchedChannels.links)){
-            let videos = []
+            let videos = [], needsToBeUpdated = false
 
-            if(process.env.DEV_MODE == "DEV"){
-                console.log("[DEV MODE]: Wont scrap abo feed to prevent soft ban")
-                try{
-                    videos = JSON.parse(fs.readFileSync(`./data/youtube/channels/${channel_id}.json`))
-                }catch(e){
-                    console.log("Channel wasnt scrapped ones so no dev data available")
-                }
-            }else{
-                // delay for each fetch to prevent ban
-                videos = await this.getChannelFeed(channel_id)
-                await new Promise(resolve => setTimeout(resolve, 2000));
-            }
-            let videoIdList = []
-    
-            videos.forEach(video => {
-                let uploadTimestamp = new Date(video.publishedTime).getTime()
-                if(uploadTimestamp >= watchedChannels.lastTimeChecked){
-                    watchedChannels.app_keys[channel_id].telegram.forEach(chat_name => {
-                        telegramBot.sendNewVideoMessage(watchedChannels.telegramChatId[chat_name], video)
-                    })
-
-                    watchedChannels.app_keys[channel_id].discordWebhook.forEach(webhook_id => {
-                        discordWebhook.sendNewVideoMessage(watchedChannels.discordWebhooks[webhook_id], video)
-                    })
+            Object.values(watchedChannels.app_keys[channel_id]).forEach(list => {
+                if(list.length >= 1){
+                    needsToBeUpdated = true
                 }
             })
+
+            if(needsToBeUpdated){
+                if(process.env.DEV_MODE == "DEV"){
+                    console.log("[DEV MODE]: Wont scrap abo feed to prevent soft ban")
+                    try{
+                        videos = JSON.parse(fs.readFileSync(`./data/youtube/channels/${channel_id}.json`))
+                    }catch(e){
+                        console.log("Channel wasnt scrapped ones so no dev data available")
+                    }
+                }else{
+                    // delay for each fetch to prevent ban
+                    videos = await this.getChannelFeed(channel_id)
+                    await new Promise(resolve => setTimeout(resolve, 2000));
+                }
+                let videoIdList = []
+                videos.forEach(video => {
+                    let uploadTimestamp = new Date(video.publishedTime).getTime()
+                    if(uploadTimestamp >= watchedChannels.lastTimeChecked){
+                        console.group("Sending Messages")
+                        watchedChannels.app_keys[channel_id].telegram.forEach(chat_name => {
+                            telegramBot.sendNewVideoMessage(watchedChannels.telegramChatId[chat_name], video)
+                        })
+
+                        watchedChannels.app_keys[channel_id].discordWebhook.forEach(webhook_id => {
+                            discordWebhook.sendNewVideoMessage(watchedChannels.discordWebhooks[webhook_id], video)
+                        })
+                        console.groupEnd()
+                    }
+                })
+            }else{
+                console.log(`[YT_CHANNEL]: Channel "${this.getChannelName(channel_id)}" skipped due to no listeners`)
+            }
             
         }
         
@@ -48,7 +59,11 @@ module.exports = {
         watchedChannels.lastTimeChecked = new Date().getTime()
         fs.writeFileSync("./data/cron/watchedChannels.json",JSON.stringify(watchedChannels, null, 4))
 
+        console.groupEnd()
         console.log("[YT_CHANNEL]: execute finished")
+    },
+    getChannelName: function (channel_id){
+        return watchedChannels.links[channel_id].split("/").pop()
     },
     getChannelFeed: async function(channel_id) {
         let o = []

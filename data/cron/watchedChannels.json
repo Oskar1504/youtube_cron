@@ -1,12 +1,13 @@
 {
-    "lastTimeChecked": 1657554314449,
+    "lastTimeChecked": 1657636213624,
     "links": {
         "UCZ-oWkpMnHjTJpeOOlD80OA": "https://www.youtube.com/c/Vandiril",
         "UCHSI8erNrN6hs3sUK6oONLA": "https://www.youtube.com/c/ilmango",
         "UCEcdWgwI36-uObOjmW6JGow": "https://www.youtube.com/c/nivarias",
         "UCm3_j4RLEzgMovQTRPx47MQ": "https://www.youtube.com/c/DrachenLord",
         "UCtt2JqBTG-KoBae4F0Ay2tg": "https://www.youtube.com/c/SeaofThieves",
-        "UCsBjURrPoezykLs9EqgamOA": "https://www.youtube.com/c/Fireship"
+        "UCsBjURrPoezykLs9EqgamOA": "https://www.youtube.com/c/Fireship",
+        "UCTIV3KbAvaGEyNjoMoNaGtQ": "https://www.youtube.com/c/KatherineOfSkyGaming"
     },
     "discordWebhooks": {
         "die_boys": "DC_WH_KEY_OSKAR"
@@ -61,6 +62,10 @@
             "discordWebhook": [
                 "die_boys"
             ]
+        },
+        "UCTIV3KbAvaGEyNjoMoNaGtQ": {
+            "telegram": [],
+            "discordWebhook": []
         }
     }
 }
