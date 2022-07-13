@@ -12,6 +12,7 @@ const discordWebhook = require('./discordWebhook');
 module.exports = {
     execute: async function (){
         console.group("[YT_CHANNEL]: execute started")
+        let startTimestamp = new Date().getTime()
         for(channel_id of Object.keys(watchedChannels.links)){
             let videos = [], needsToBeUpdated = false
 
@@ -38,7 +39,6 @@ module.exports = {
                 videos.forEach(video => {
                     let uploadTimestamp = new Date(video.publishedTime).getTime()
                     if(uploadTimestamp >= watchedChannels.lastTimeChecked){
-                        console.group("Sending Messages")
                         watchedChannels.app_keys[channel_id].telegram.forEach(chat_name => {
                             telegramBot.sendNewVideoMessage(watchedChannels.telegramChatId[chat_name], video)
                         })
@@ -46,7 +46,6 @@ module.exports = {
                         watchedChannels.app_keys[channel_id].discordWebhook.forEach(webhook_id => {
                             discordWebhook.sendNewVideoMessage(watchedChannels.discordWebhooks[webhook_id], video)
                         })
-                        console.groupEnd()
                     }
                 })
             }else{
@@ -56,7 +55,7 @@ module.exports = {
         }
         
             
-        watchedChannels.lastTimeChecked = new Date().getTime()
+        watchedChannels.lastTimeChecked = startTimestamp
         fs.writeFileSync("./data/cron/watchedChannels.json",JSON.stringify(watchedChannels, null, 4))
 
         console.groupEnd()
@@ -73,7 +72,7 @@ module.exports = {
                 },
         })
         .then(res => {
-            console.log(`[YT_CHANNEL]: RSS FEED  call success: channel_id ${channel_id}`)
+            console.log(`[YT_CHANNEL]: RSS FEED  call success: channel_id ${this.getChannelName(channel_id)}`)
             let rssFeed = JSON.parse(convert.xml2json(res.data, {compact: true, spaces: 4}))
             let videos = rssFeed.feed.entry
 

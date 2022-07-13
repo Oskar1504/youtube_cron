@@ -16,6 +16,12 @@ module.exports = {
         this.sendMessage(webhook_id, message)
     },
     sendMessage(webhook_id, message){
+        
+        if(process.env.DEV_MODE != "PROD"){
+            console.log(`[TELEGRAM]: No message send due to DEV_MODE != PROD`)
+            return
+        }
+        
         // possible cotent https://discord.com/developers/docs/resources/channel#create-message
         let msg = JSON.stringify({
             content: message

@@ -15,15 +15,19 @@ module.exports = {
         this.sendMessage(chat_id, message)
     },
     sendMessage(chat_id, message){
+        if(process.env.DEV_MODE != "PROD"){
+            console.log(`[TELEGRAM]: No message send due to DEV_MODE != PROD`)
+            return
+        }
         if(process.env[chat_id]){
             axios.get(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
                 params: {
-                chat_id: process.env[chat_id],
-                text: message,
+                    chat_id: process.env[chat_id],
+                    text: message,
                 },
             })
             .then(res => {
-                console.log(`[TELEGRAM]: /sendMessage api call success  ${chat_id}`)
+                console.log(`[TELEGRAM]: /sendMessage to ${chat_id}`)
             })
             .catch(e => {
                 console.log(`[TELEGRAM]: ERROR ${e.toString()}`)
