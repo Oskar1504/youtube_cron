@@ -167,7 +167,8 @@ module.exports = {
     generateAppKeys: function() {
         return {
             telegram: [],
-            discordWebhook: []
+            discordWebhook: [],
+            discordUserIds: []
         }
     },
     whoListensToWho: function() {

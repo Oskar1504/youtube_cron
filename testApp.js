@@ -56,10 +56,13 @@ async function main(){
 // aboChannel.updateVideoList()
 //aboChannel.whoListensToWho()
 
-aboChannel.getChannelId("https://www.youtube.com/c/KatherineOfSkyGaming")
+//aboChannel.getChannelId("https://www.youtube.com/c/KatherineOfSkyGaming")
 
 //telegramBot.sendMessage("T_CID_OSKAR","Hallo oskar")
 
 // aboChannel.execute()
-
 // aboChannel.getChannelFeed("UCEcdWgwI36-uObOjmW6JGow")
+
+// aboChannel.addListenerToChannel("Vandiril", "discordUserIds", "mikey")
+
+// discordWebhook.sendMessage("DC_WH_KEY_OSKAR_TEST","hey <@477459599071641611>")

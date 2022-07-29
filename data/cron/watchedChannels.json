@@ -1,20 +1,26 @@
 {
-    "lastTimeChecked": 1657722090021,
+    "lastTimeCheckedOld": 1659081813000,
+    "lastTimeChecked": 1659097212418,
     "links": {
         "UCZ-oWkpMnHjTJpeOOlD80OA": "https://www.youtube.com/c/Vandiril",
         "UCHSI8erNrN6hs3sUK6oONLA": "https://www.youtube.com/c/ilmango",
         "UCEcdWgwI36-uObOjmW6JGow": "https://www.youtube.com/c/nivarias",
         "UCm3_j4RLEzgMovQTRPx47MQ": "https://www.youtube.com/c/DrachenLord",
         "UCtt2JqBTG-KoBae4F0Ay2tg": "https://www.youtube.com/c/SeaofThieves",
-        "UCsBjURrPoezykLs9EqgamOA": "https://www.youtube.com/c/Fireship",
-        "UCTIV3KbAvaGEyNjoMoNaGtQ": "https://www.youtube.com/c/KatherineOfSkyGaming"
+        "UCsBjURrPoezykLs9EqgamOA": "https://www.youtube.com/c/Fireship"
     },
     "discordWebhooks": {
-        "die_boys": "DC_WH_KEY_OSKAR"
+        "die_boys": "DC_WH_KEY_OSKAR_TEST",
+        "own_server": "DC_WH_KEY_OSKAR_TEST"
     },
     "telegramChatId": {
         "oskar": "T_CID_OSKAR",
         "mikey": "T_CID_MIKEY"
+    },
+    "discordUserIds": {
+        "oskar": "477459599071641611",
+        "mikey": "351770205221027840",
+        "palmenglados": "480848438905405460"
     },
     "app_keys": {
         "UCZ-oWkpMnHjTJpeOOlD80OA": {
@@ -23,6 +29,9 @@
             ],
             "discordWebhook": [
                 "die_boys"
+            ],
+            "discordUserIds": [
+                "mikey"
             ]
         },
         "UCHSI8erNrN6hs3sUK6oONLA": {
@@ -31,6 +40,9 @@
             ],
             "discordWebhook": [
                 "die_boys"
+            ],
+            "discordUserIds": [
+                "oskar"
             ]
         },
         "UCEcdWgwI36-uObOjmW6JGow": {
@@ -39,12 +51,18 @@
             ],
             "discordWebhook": [
                 "die_boys"
+            ],
+            "discordUserIds": [
+                "oskar"
             ]
         },
         "UCm3_j4RLEzgMovQTRPx47MQ": {
             "telegram": [],
             "discordWebhook": [
                 "die_boys"
+            ],
+            "discordUserIds": [
+                "palmenglados"
             ]
         },
         "UCtt2JqBTG-KoBae4F0Ay2tg": {
@@ -53,6 +71,10 @@
             ],
             "discordWebhook": [
                 "die_boys"
+            ],
+            "discordUserIds": [
+                "oskar",
+                "palmenglados"
             ]
         },
         "UCsBjURrPoezykLs9EqgamOA": {
@@ -61,11 +83,10 @@
             ],
             "discordWebhook": [
                 "die_boys"
+            ],
+            "discordUserIds": [
+                "oskar"
             ]
-        },
-        "UCTIV3KbAvaGEyNjoMoNaGtQ": {
-            "telegram": [],
-            "discordWebhook": []
         }
     }
 }
